@@ -1,11 +1,31 @@
+import logo from "../assets/XCD-Logo.png";
+
 const About = () => (
-  <section id="about" className="py-20 bg-gray-100">
-    <div className="max-w-4xl mx-auto px-4 text-center">
-      <h2 className="text-4xl font-bold mb-6">About Me</h2>
-      <p className="text-lg leading-relaxed">
-        I'm a web developer passionate about building responsive and interactive web applications using React and Tailwind CSS.
-        I love learning new technologies and creating clean, modern designs.
-      </p>
+  <section
+    id="about"
+    className="min-h-screen flex items-center bg-[#150052] text-white pt-[120px] md:pt-[90px] lg:pt-[100px]"
+  >
+    <div className="w-full max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-12">
+
+      {/* Left: Text */}
+      <div className="text-center md:text-center md:w-[50%]">
+        <p className="text-2xl lg:text-xl mb-6 leading-relaxed">
+          Hi! I’m Renz, an aspiring Full Stack Developer known as “XCD.” I enjoy creating reliable web apps, designing intuitive interfaces, and exploring modern stacks like JavaScript, Python, and MySQL. When I’m not coding, I’m probably losing to my own bugs or tinkering with fun side projects.
+        </p>
+
+        <p className="text-3xl mb-6 leading-relaxed">
+          "I write code I don’t fully understand just to see what happens." – Renz
+        </p>
+      </div>
+
+      {/* Right: Image */}
+      <div className="flex justify-center md:w-[40%] lg:w-[45%]">
+        <img
+          src={logo}
+          alt="Renz"
+          className="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl"
+        />
+      </div>
     </div>
   </section>
 );

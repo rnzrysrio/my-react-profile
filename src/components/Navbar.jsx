@@ -27,7 +27,7 @@ const Navbar = () => {
           <a href="#home" className="mx-5 hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500 lg:text-5xl">
             HOME
           </a>
-          <a href="#about" className="mx-5 hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500 lg:text-5xl">
+          <a href="#tech" className="mx-5 hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500 lg:text-5xl">
             TECH
           </a>
           <a href="#projects" className="mx-5 hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500 lg:text-5xl">

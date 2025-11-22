@@ -1,5 +1,5 @@
 const Contact = () => (
-  <section id="contact" className="py-20 bg-gray-800 text-white">
+  <section id="contact" className="py-20 bg-[#150052] text-white">
     <div className="max-w-3xl mx-auto px-4 text-center">
       <h2 className="text-4xl font-bold mb-6">Contact Me</h2>
       <p className="mb-6">Feel free to reach out via email or connect on LinkedIn</p>

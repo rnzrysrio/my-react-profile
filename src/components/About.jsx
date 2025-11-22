@@ -5,7 +5,7 @@ const About = () => (
     id="about"
     className="min-h-screen flex items-center bg-[#150052] text-white pt-[120px] md:pt-[90px] lg:pt-[100px]"
   >
-    <div className="w-full max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-12">
+    <div className="w-full max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
 
       {/* Left: Text */}
       <div className="text-center md:text-center md:w-[50%]">
@@ -23,7 +23,7 @@ const About = () => (
         <img
           src={logo}
           alt="Renz"
-          className="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl"
+          className="w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl"
         />
       </div>
     </div>

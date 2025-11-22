@@ -3,7 +3,7 @@ import GradPic from "../assets/GradPic.jpg";
 const Hero = () => (
   <section
     id="home"
-    className="min-h-screen flex items-center bg-[#150052] text-white pt-[120px] md:pt-[90px] lg:pt-[100px]"
+    className="min-h-screen flex items-center bg-[#150052] text-white pt-[100px] md:pt-[90px] lg:pt-[100px]"
   >
     <div className="w-full max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-12">
 

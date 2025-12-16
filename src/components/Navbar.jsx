@@ -7,10 +7,10 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-[#150052] text-white z-50 px-14 py-6 md:px-5 lg:px-3 lg:py-5 shadow-md">
 
       {/* Top row */}
-      <div className="flex justify-between items-center md:justify-around lg:pt-2">
+      <div className="flex justify-between items-center md:justify-between">
 
         {/* Logo */}
-        <div className="text-5xl font-bold md:text-3xl md:pl-10 lg:text-5xl lg:ml-[-100px]">
+        <div className="text-4xl font-bold md:text-2xl lg:text-4xl lg:ml-20">
           XCD
         </div>
 
@@ -23,17 +23,17 @@ const Navbar = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex md:w-1xl lg:w-4xl justify-around text-center">
-          <a href="#home" className="mx-5 hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500 lg:text-5xl">
+        <div className="hidden md:flex md:w-[70%] lg:w-4xl justify-around text-center">
+          <a href="#home" className="mx-1 hover:bg-[#82D9F1] md:text-2xl lg:text-4xl font-bold transition-colors duration-500">
             HOME
           </a>
-          <a href="#tech" className="mx-5 hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500 lg:text-5xl">
+          <a href="#tech" className="mx-1 hover:bg-[#82D9F1] md:text-2xl lg:text-4xl font-bold transition-colors duration-500">
             TECH
           </a>
-          <a href="#projects" className="mx-5 hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500 lg:text-5xl">
+          <a href="#projects" className="mx-1 hover:bg-[#82D9F1] md:text-2xl lg:text-4xl font-bold transition-colors duration-500">
             PROJECTS
           </a>
-          <a href="#contact" className="mx-5 hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500 lg:text-5xl">
+          <a href="#contact" className="mx-1 hover:bg-[#82D9F1] md:text-2xl lg:text-4xl font-bold transition-colors duration-500">
             CONTACT
           </a>
         </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <nav className="flex flex-col gap-4">
             <a
               href="#home"
-              className="py-4 text-center hover:bg-[#82D9F1] text-4xl font-bold transition-colors duration-500"
+              className="py-4 text-center hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500"
               onClick={() => setIsOpen(false)}
             >
               HOME
@@ -65,7 +65,7 @@ const Navbar = () => {
 
             <a
               href="#about"
-              className="py-4 text-center hover:bg-[#82D9F1] text-4xl font-bold transition-colors duration-500"
+              className="py-4 text-center hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500"
               onClick={() => setIsOpen(false)}
             >
               ABOUT
@@ -73,7 +73,7 @@ const Navbar = () => {
 
             <a
               href="#tech"
-              className="py-4 text-center hover:bg-[#82D9F1] text-4xl font-bold transition-colors duration-500"
+              className="py-4 text-center hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500"
               onClick={() => setIsOpen(false)}
             >
               TECH STACK
@@ -81,7 +81,7 @@ const Navbar = () => {
 
             <a
               href="#projects"
-              className="py-4 text-center hover:bg-[#82D9F1] text-4xl font-bold transition-colors duration-500"
+              className="py-4 text-center hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500"
               onClick={() => setIsOpen(false)}
             >
               PROJECTS
@@ -89,7 +89,7 @@ const Navbar = () => {
 
             <a
               href="#education"
-              className="py-4 text-center hover:bg-[#82D9F1] text-4xl font-bold transition-colors duration-500"
+              className="py-4 text-center hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500"
               onClick={() => setIsOpen(false)}
             >
               EDUCATION
@@ -97,7 +97,7 @@ const Navbar = () => {
 
             <a
               href="#contact"
-              className="py-4 text-center hover:bg-[#82D9F1] text-4xl font-bold transition-colors duration-500"
+              className="py-4 text-center hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500"
               onClick={() => setIsOpen(false)}
             >
               CONTACT

@@ -28,93 +28,102 @@ const TECHSTACK = [
 const Tech = () => (
   <section
     id="tech"
-    className="items-center bg-[#150052] text-white pt-[120px] md:pt-[90px] lg:pt-[100px]"
+    className="items-center bg-[#150052] text-white pt-[80px]"
   >
     {/* Section Header */}
-    <div className="my-10">
+    <div className="my-5">
       <h1 className="text-5xl font-bold text-center">TECH STACK</h1>
     </div>
 
     {/* Tech Stacks */}
-    <div className="w-full flex flex-col p-5 md:grid md:grid-cols-2 md:justify-items-center md:gap-x-5 md:gap-y-10 lg:p-10 lg:gap-y-3">
+    <div className="w-full p-5 justify-items-center md:grid md:grid-cols-2 md:gap-10">
 
       {/* LANGUAGES */}
-      <div className="border border-[#00B2FF] border-4 rounded-2xl w-full mb-10">
-        <h1 className="bg-sky-600 text-5xl font-bold p-5 text-left md:text-center">
-          LANGUAGE
+      <div className="flex flex-col border border-[#00B2FF] border-2 rounded-2xl w-full mb-10 md:mb-0">
+        <h1 className="bg-sky-600 rounded-xl w-full h-20 text-3xl font-bold p-5 text-center">
+            LANGUAGE
         </h1>
-        {TECHSTACK.filter((item) => item.category === "Language").map((item) => (
-          <div key={item.id} className="p-6 w-full bg-white-500 flex items-center">
-            <img
-              src={item.iconPath}
-              alt=""
-              className="h-20 w-20 rounded-full mr-6 md:h-16 md:w-16"
-            />
-            <h1 className="text-3xl font-bold text-left md:text-2xl">
-              {item.tech}
-            </h1>
-          </div>
-        ))}
+        <div className="flex flex-col">
+          {TECHSTACK.filter((item) => item.category === "Language").map((item) => (
+            <div key={item.id} className="p-3 w-full bg-white-500 flex items-center">
+              <img
+                src={item.iconPath}
+                alt="icon"
+                className="h-10 w-10 rounded-full mr-6 md:h-15 md:w-15"
+              />
+              <h1 className="text-3xl font-bold text-left md:text-2xl">
+                {item.tech}
+              </h1>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* FRAMEWORKS / LIBRARIES */}
-      <div className="border border-[#00B2FF] border-4 rounded-2xl w-full mb-10">
-        <h1 className="bg-sky-600 text-5xl font-bold p-5 text-left md:text-center">
-          FRAMEWORK / LIBRARY
+      <div className="flex flex-col border border-[#00B2FF] border-2 rounded-2xl w-full mb-10 md:mb-0">
+        <h1 className="bg-sky-600 rounded-xl w-full h-20 text-3xl font-bold p-5 text-center md:p-1 lg:p-5">
+            FRAMEWORKS & LIBRARIES
         </h1>
-        {TECHSTACK.filter((item) => item.category === "FrameLib").map((item) => (
-          <div key={item.id} className="p-6 w-full bg-white-500 flex items-center">
-            <img
-              src={item.iconPath}
-              alt=""
-              className="h-20 w-20 rounded-full mr-6 md:h-16 md:w-16"
-            />
-            <h1 className="text-3xl font-bold text-left md:text-2xl">
-              {item.tech}
-            </h1>
-          </div>
-        ))}
+        <div className="flex flex-col">
+          {TECHSTACK.filter((item) => item.category === "FrameLib").map((item) => (
+            <div key={item.id} className="p-3 w-full bg-white-500 flex items-center">
+              <img
+                src={item.iconPath}
+                alt="icon"
+                className="h-10 w-10 rounded-full mr-6 md:h-15 md:w-15"
+              />
+              <h1 className="text-3xl font-bold text-left md:text-2xl">
+                {item.tech}
+              </h1>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* DATABASES */}
-      <div className="border border-[#00B2FF] border-4 rounded-2xl w-full mb-10">
-        <h1 className="bg-sky-600 text-5xl font-bold p-5 text-left md:text-center">
-          DATABASE
+      <div className="flex flex-col border border-[#00B2FF] border-2 rounded-2xl w-full mb-10 md:mb-0">
+        <h1 className="bg-sky-600 rounded-xl w-full h-20 text-3xl font-bold p-5 text-center">
+            DATABASE
         </h1>
-        {TECHSTACK.filter((item) => item.category === "Database").map((item) => (
-          <div key={item.id} className="p-6 w-full bg-white-500 flex items-center">
-            <img
-              src={item.iconPath}
-              alt=""
-              className="h-20 w-20 rounded-full mr-6 md:h-16 md:w-16"
-            />
-            <h1 className="text-3xl font-bold text-left md:text-2xl">
-              {item.tech}
-            </h1>
-          </div>
-        ))}
+        <div className="flex flex-col">
+          {TECHSTACK.filter((item) => item.category === "Database").map((item) => (
+            <div key={item.id} className="p-3 w-full bg-white-500 flex items-center">
+              <img
+                src={item.iconPath}
+                alt="icon"
+                className="h-10 w-10 rounded-full mr-6 md:h-15 md:w-15"
+              />
+              <h1 className="text-3xl font-bold text-left md:text-2xl">
+                {item.tech}
+              </h1>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* DEVOPS */}
-      <div className="border border-[#00B2FF] border-4 rounded-2xl w-full mb-10">
-        <h1 className="bg-sky-600 text-5xl font-bold p-5 text-left md:text-center">
-          DEVOPS
+      <div className="flex flex-col border border-[#00B2FF] border-2 rounded-2xl w-full">
+        <h1 className="bg-sky-600 rounded-xl w-full h-20 text-3xl font-bold p-5 text-center">
+            DEVOPS
         </h1>
-        {TECHSTACK.filter((item) => item.category === "DevOps").map((item) => (
-          <div key={item.id} className="p-6 w-full bg-white-500 flex items-center">
-            <img
-              src={item.iconPath}
-              alt=""
-              className="h-20 w-20 rounded-full mr-6 md:h-16 md:w-16"
-            />
-            <h1 className="text-3xl font-bold text-left md:text-2xl">
-              {item.tech}
-            </h1>
-          </div>
-        ))}
+        <div className="flex flex-col">
+          {TECHSTACK.filter((item) => item.category === "DevOps").map((item) => (
+            <div key={item.id} className="p-3 w-full bg-white-500 flex items-center">
+              <img
+                src={item.iconPath}
+                alt="icon"
+                className="h-10 w-10 rounded-full mr-6 md:h-15 md:w-15"
+              />
+              <h1 className="text-3xl font-bold text-left md:text-2xl">
+                {item.tech}
+              </h1>
+            </div>
+          ))}
+        </div>
       </div>
 
     </div>
+
   </section>
 );
 

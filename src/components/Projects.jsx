@@ -1,7 +1,7 @@
 const PROJECTS = [
   { id: 1, name: "BUILDHUB SELLER", description: "Helped develop and enhance seller-side features for a marketplace platform.", techstack: "React, Tailwind CSS, Zustand, TanStack Query", link: "https://github.com/8boxSolutions/Buildhub-Seller-Portal" },
   { id: 2, name: "TOWKING ADMIN", description: "Contributed to a towing service management system.", techstack: "React, Tailwind CSS, Zustand, TanStack Query" , link: "https://github.com/8boxSolutions/Buildhub-Seller-Portal" },
-  { id: 3, name: "VISITOR MANAGEMENT SYSTEM", description: "A functional VMS prototype that stores visitor data in MySQL (phpMyAdmin) and generates tickets in PDF using FPDF.", techstack: "PHP, HTML, CSS, MySQL, FPDF" , link: "https://github.com/rnzrysrio/Visitor-Management-System-V2" },
+  { id: 3, name: "VISITOR MANAGEMENT SYSTEM", description: "A functional VMS proof of concept that stores visitor data in MySQL (phpMyAdmin) and generates tickets in PDF using FPDF.", techstack: "PHP, HTML, CSS, MySQL, FPDF" , link: "https://github.com/rnzrysrio/Visitor-Management-System-V2" },
 ];
 
 const Projects = () => (
@@ -39,7 +39,7 @@ const Projects = () => (
           </div>
 
           <div className="flex justify-center items-center p-5 md:w-[30%]">
-            <a href={items.link} target="_blank" className="outline h-15 w-70 rounded-xl flex justify-center items-center">Go To Repo &rarr;</a>
+            <a href={items.link} target="_blank" className="text-xl font-bold bg-blue-500 hover:bg-blue-600 transition h-15 w-70 rounded-xl flex justify-center items-center md:w-40">Go To Repo &rarr;</a>
           </div>
         </div>
       </div>

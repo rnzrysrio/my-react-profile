@@ -23,6 +23,7 @@ const TECHSTACK = [
   { id: 9, category: "Database", tech: "MySQL", iconPath: MYSQLPNG },
   { id: 10, category: "Database", tech: "SQLite", iconPath: SQLITEPNG },
   { id: 11, category: "DevOps", tech: "Git & Github", iconPath: GITHUBPNG },
+  { id: 12, category: "DevOps", tech: "Visual Studio Code", iconPath: null },
 ];
 
 const Tech = () => (
@@ -104,7 +105,7 @@ const Tech = () => (
       {/* DEVOPS */}
       <div className="flex flex-col border border-[#00B2FF] border-2 rounded-2xl w-full">
         <h1 className="bg-sky-600 rounded-xl w-full h-20 text-3xl font-bold p-5 text-center">
-            DEVOPS
+            TOOLS
         </h1>
         <div className="flex flex-col">
           {TECHSTACK.filter((item) => item.category === "DevOps").map((item) => (

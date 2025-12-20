@@ -27,8 +27,8 @@ const Navbar = () => {
           <a href="#home" className="mx-1 hover:bg-[#82D9F1] md:text-2xl lg:text-4xl font-bold transition-colors duration-500">
             HOME
           </a>
-          <a href="#tech" className="mx-1 hover:bg-[#82D9F1] md:text-2xl lg:text-4xl font-bold transition-colors duration-500">
-            TECH
+          <a href="#about" className="mx-1 hover:bg-[#82D9F1] md:text-2xl lg:text-4xl font-bold transition-colors duration-500">
+            ABOUT
           </a>
           <a href="#projects" className="mx-1 hover:bg-[#82D9F1] md:text-2xl lg:text-4xl font-bold transition-colors duration-500">
             PROJECTS
@@ -72,11 +72,11 @@ const Navbar = () => {
             </a>
 
             <a
-              href="#tech"
+              href="#education"
               className="py-4 text-center hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500"
               onClick={() => setIsOpen(false)}
             >
-              TECH STACK
+              EDUCATION
             </a>
 
             <a
@@ -85,14 +85,6 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               PROJECTS
-            </a>
-
-            <a
-              href="#education"
-              className="py-4 text-center hover:bg-[#82D9F1] text-3xl font-bold transition-colors duration-500"
-              onClick={() => setIsOpen(false)}
-            >
-              EDUCATION
             </a>
 
             <a
